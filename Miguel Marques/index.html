@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Document Object Model</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fundação de Ensino de Contagem</h1>
+        <p>Curso de Frontend</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Cursos</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main>
+        <section id="primeira">
+            <h2>Manipulação do DOM</h2>
+            <p>Este é um parágrafo que será utilizado nos exercícios.</p>
+            <p class="destaque">Este é um texto com a classe destaque.</p>
+        </section>
+
+        <section id="caixas">
+            <div class="box">
+                <h3>Caixa 1</h3>
+                <p>Conteúdo da 1ª caixa.</p>
+            </div>
+
+            <div class="box">
+                <h3>Caixa 2</h3>
+                <p>Conteúdo da 2ª caixa.</p>
+            </div>
+
+            <div class="box">
+                <h3>Caixa 3</h3>
+                <p>Conteúdo da 3ª caixa.</p>
+            </div>
+        </section>
+
+        <section id="botoes">
+            <button id="botao-principal">Botão principal</button>
+            <button id="botao-secundario">Botão secundário</button>
+        </section>
+
+        <section id="lista">
+            <h2>Lista de tecnologias</h2>
+            <ul id="tecnologias">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Rust</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Imagem</h2>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect width='120' height='80' fill='%235b3df5'/%3E%3Ccircle cx='60' cy='40' r='22' fill='%23ffc93c'/%3E%3C/svg%3E" alt="Imagem de exemplo" width="120" height="80">
+        </section>
+
+        <section id="formulario">
+            <h2>Formulário</h2>
+
+            <form id="form-contato">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" placeholder="Digite seu nome"><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="text" id="email" placeholder="Digite seu e-mail"><br>
+
+                <label for="curso">Curso:</label><br>
+                <select id="curso">
+                    <option value="">Selecione</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select><br>
+
+                <label for="comentario">Comentário:</label><br>
+                <textarea id="comentario" placeholder="Deixe sua mensagem aqui"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Tabela de alunos</h2>
+
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Curso</th>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>20</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>Bruno</td>
+                    <td>22</td>
+                    <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Carla</td>
+                    <td>19</td>
+                    <td>CSS</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Curso de Frontend - Manipulação do DOM</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
